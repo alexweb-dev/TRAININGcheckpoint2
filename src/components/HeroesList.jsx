@@ -1,3 +1,4 @@
+import HeroesItem from "./HeroesItem"
 function HeroesList({ heroesData }) {
 
   console.log(heroesData);
@@ -10,7 +11,7 @@ function HeroesList({ heroesData }) {
       <h1>The Most powerfull heroes:</h1>
       <ul>
         {heroesData.map((hero) => (
-        <li key={hero.id}>{hero.name}</li>
+        <li key={hero.id}><HeroesItem hero={hero} /></li>
         ))}
       </ul>
     </>
