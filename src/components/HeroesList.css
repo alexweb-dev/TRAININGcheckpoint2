@@ -1,0 +1,21 @@
+.hero-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none; 
+    gap: 1%;
+    padding: 0;
+  }
+  
+  h2{
+    color: aqua;
+  }
+  input {
+    width: 20%;
+    height: 2rem;
+    margin: 10px;
+  }
+  .italic-label {
+    font-style: italic;
+    font-size: 1.4rem;
+  }
