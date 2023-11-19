@@ -1,7 +1,8 @@
+import "./Header.css"
 function Header() {
   return (
     <header>
-      <h1>My Heroes</h1>
+      <h1 className="top">My Heroes</h1>
     </header>
   )
 }

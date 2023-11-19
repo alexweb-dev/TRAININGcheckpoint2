@@ -1,0 +1,37 @@
+.names {
+  color: rgb(0, 153, 255);
+  font-size: 2.7rem;
+  font-weight: bold;
+}
+.intelligence {
+  color: rgb(120, 120, 197);
+}
+
+.strength {
+  color: rgb(223, 83, 83);
+}
+
+.speed {
+  color: yellow;
+}
+
+.durability {
+  color: rgb(150, 149, 149);
+}
+
+.power {
+  color: rgb(255, 136, 0);
+}
+
+.combat {
+  color: rgb(255, 0, 212);
+}
+.colored-stat {
+  color: rgb(0, 255, 0);
+}
+.medium-value {
+  color: white;
+}
+.low-value {
+    color: red;
+  }

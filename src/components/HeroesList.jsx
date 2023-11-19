@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import HeroesItem from "./HeroesItem"
+import "./HeroesList.css"
 
 function HeroesList({ heroesData }) {
 
@@ -22,9 +23,11 @@ function HeroesList({ heroesData }) {
 
   return (
     <>
-      <h1>The Most powerfull heroes:</h1>
+      <h2>These are the most powerfull</h2>
+      <br />
       <div>
-        <label htmlFor="search">Who are you looking for?</label>
+        <label htmlFor="search" className="italic-label">"Who are you looking for?"</label>
+        <br />
         <input
           type="text"
           id="search"
@@ -32,7 +35,7 @@ function HeroesList({ heroesData }) {
           onChange={handleSearchChange}
         />
       </div>
-      <ul>
+      <ul className="hero-list">
         {filterHeroes.map((hero) => (
         <li key={hero.id}><HeroesItem hero={hero} /></li>
         ))}
@@ -40,5 +43,6 @@ function HeroesList({ heroesData }) {
     </>
   )
 }
+
 
 export default HeroesList;

@@ -1,0 +1,17 @@
+.names {
+  color: rgb(0, 153, 255);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.goodAlignment{
+  color:chartreuse;
+}
+
+.badAlignment {
+  color:crimson;
+}
+
+.neutralAlignment {
+  color: yellow;
+}
