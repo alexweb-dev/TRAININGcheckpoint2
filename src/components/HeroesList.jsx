@@ -12,14 +12,23 @@ function HeroesList({ heroesData }) {
   const [filterHeroes, setFilterHeroes] = useState(heroesData);
 
   const handleSearchChange = (event) => {
-    const { value } = event.target;
+    let { value } = event.target;
+    value = value.replace(/-/g, " ");
+
     setSearchBar(value);
 
-    const filtered = heroesData.filter((hero) =>
-    hero.name.toLowerCase().includes(value.toLowerCase())
-  );
-  setFilterHeroes(filtered);
-};
+    const filtered = heroesData.filter((hero) => {
+      const heroName = hero.name.toLowerCase().replace(/-/g, " ");
+      const fullName = hero.biography.fullName.toLowerCase().replace(/-/g, " ");
+      
+      return (
+        heroName.includes(value.toLowerCase()) || 
+        fullName.includes(value.toLowerCase())
+      );
+    });
+
+    setFilterHeroes(filtered);
+  };
 
   return (
     <>
